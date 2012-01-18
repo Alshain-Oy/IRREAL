@@ -1,0 +1,38 @@
+{
+	PARAMS pop
+	array def
+
+	{
+	PARAMS pop
+	merge
+	1 add
+	OUT push
+	} func def
+	
+	array
+	func 1 call
+	sync
+	merge
+	OUT push
+} func def
+
+
+
+17 func 1 call
+sync
+merge
+
+print
+
+
+{ } lista def
+
+0
+{
+	dup
+	lista push
+	1 add
+} { lista length 20 sub } while
+
+lista merge
+print 

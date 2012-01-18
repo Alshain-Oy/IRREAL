@@ -1,0 +1,27 @@
+
+{
+	10
+	OUT push
+
+} func1 def
+
+
+{
+	40
+	OUT push
+
+} func2 def
+
+
+
+1
+{ func1 0 call sync merge } { func2 0 call sync merge } if
+
+print
+
+
+0
+{ func1 } { func2 } if
+
+0 call sync merge
+print

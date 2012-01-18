@@ -1,0 +1,15 @@
+{
+	PARAMS pop
+	2 add
+	OUT push
+
+} add-2 def
+
+3 add-2 1 call
+sync
+merge
+
+1 add
+2 add
+
+print

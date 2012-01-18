@@ -1,0 +1,53 @@
+
+{
+	PARAMS pop
+	array def
+	PARAMS pop
+	func def
+	
+	popping-array print
+	{
+		array pop
+		func 1 call
+	}
+	{
+		array length
+	}
+	while
+	joining print
+	join
+	outing print
+	{ OUT push } { CURRENT length } while
+	outed print
+	
+} map def
+
+
+{
+	PARAMS pop
+	17 add
+	dup
+	mul
+	OUT push
+} func def
+
+{
+	PARAMS pop
+	merge
+	{ print } { CURRENT length } while
+} print-all def
+
+{ } lista def
+
+0
+{
+	dup
+	lista push
+	1 add
+} { lista length 200000 sub } while
+
+calling print
+lista func map 2 call
+sync
+length print
+

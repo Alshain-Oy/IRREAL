@@ -1,0 +1,42 @@
+
+{
+	PARAMS pop
+	array def
+	PARAMS pop
+	func def
+	
+	{
+		array pop
+		func 1 call
+		sync merge
+		OUT push
+	}
+	{
+		array length
+	}
+	while
+	join
+
+} map def
+
+
+{
+	PARAMS pop
+	17 add
+	OUT push
+} func def
+
+{
+	PARAMS pop
+	merge
+	{ print } { CURRENT length } while
+} print-all def
+
+{ 1 2 3 4 5 6 } lista def
+
+
+lista func map 2 call
+sync
+print-all 1 call
+
+

@@ -1,0 +1,7 @@
+
+{ dup mul } square def
+
+
+1 square macro print
+2 square macro print
+3 square macro print

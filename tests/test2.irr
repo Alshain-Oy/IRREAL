@@ -1,0 +1,14 @@
+
+{
+	10
+	OUT push
+
+} func def
+
+
+
+func 0 call sync merge
+print
+
+func 0 call sync merge
+print

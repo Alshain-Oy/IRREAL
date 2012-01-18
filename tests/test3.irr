@@ -1,0 +1,7 @@
+
+{ } array def
+
+{ 1 array push } { array length 10 sub } while
+
+array length
+print
